@@ -3,19 +3,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e3e3e3, #cfcfcf 40%, #ffffff 100%); /* Fond plus doux */
-    color: #333; /* Texte plus sombre et lisible */
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff 60%); /* Dégradé doux du gris clair au blanc */
+    color: #333;
     line-height: 1.6;
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 /* Barre de navigation */
 .navbar {
-    background-color: #4b4b4b; /* Un gris doux pour la barre de navigation */
+    background-color: transparent; /* Barre transparente */
     padding: 15px;
+    position: fixed; /* La barre reste en place */
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Placer la barre au-dessus du contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Une légère ombre pour la rendre visible */
 }
 
 .navbar ul {
@@ -51,18 +56,25 @@ body {
 #voyages {
     background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
 }
 
 #seminaires {
     background: url('3e.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
 }
 
-/* En-tête principal */
+/* En-tête principal, avec le titre */
 .main-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Ombre légère pour rendre le texte lisible */
+    background-color: transparent; /* En-tête transparent pour laisser place à l'image */
     color: #fff;
-    padding: 60px 0;
+    padding: 0; /* Retirer les marges */
+    margin-top: 0; /* Aucune marge au-dessus du texte */
 }
 
 /* Contenu principal */
@@ -71,13 +83,13 @@ body {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8); /* Fond blanc légèrement transparent autour du texte */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
     color: #333;
     text-align: left;
     max-height: 100%;
-    margin-bottom: 30px; /* Espacement avant le footer */
+    margin-bottom: 30px;
 }
 
 .content h2 {
