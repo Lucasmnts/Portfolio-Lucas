@@ -75,6 +75,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: #333;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    min-height: 50vh; /* Minimum hauteur 50% de l'écran */
 }
 
 .content h2 {
