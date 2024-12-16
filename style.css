@@ -47,6 +47,27 @@ body {
     color: #fff;
 }
 
+/* Image d'arrière-plan pour la page Séminaires */
+.main-header {
+    position: relative;
+    height: 400px;
+    background-image: url('3e.jpg'); /* Assurez-vous que l'image est dans le bon dossier */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-header h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* Contenu principal */
 .content {
     flex: 1;
@@ -74,27 +95,6 @@ body {
 .content p {
     margin: 15px 0;
     color: #555;
-}
-
-/* Image d'arrière-plan pour la page Voyages */
-.main-header {
-    position: relative;
-    height: 400px;
-    background-image: url('LOI-CAR-sejour-Islande.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main-header h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
 }
 
 /* Footer toujours en bas */
