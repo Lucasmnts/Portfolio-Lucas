@@ -16,6 +16,11 @@ body {
 .navbar {
     background-color: #333;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Pour que la barre de navigation soit toujours au-dessus */
 }
 
 .navbar ul {
@@ -40,11 +45,21 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar ul li a:hover {
     background-color: #555;
     color: #ffcc00;
+}
+
+/* Image de bannière */
+.banner-image {
+    width: 100%; /* Assure que l'image occupe toute la largeur de la page */
+    height: 300px; /* Ajuste la hauteur selon tes préférences */
+    object-fit: cover; /* Garde le ratio de l'image tout en remplissant la zone */
+    display: block; /* Enlève les marges par défaut autour de l'image */
+    margin-top: 60px; /* Ajuste la hauteur de l'espace sous la barre de navigation */
 }
 
 /* Contenu principal */
