@@ -1,52 +1,130 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lucas Meynaerts - Accueil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">🏠 Accueil</a></li>
-            <li><a href="voyages.html">🌍 Voyages</a></li>
-            <li><a href="seminaires.html">📅 Séminaires</a></li>
-            <li><a href="competences.html">💡 Compétences</a></li>
-            <li><a href="parcours.html">🎓 Parcours</a></li>
-            <li><a href="experiences.html">📜 Expériences</a></li>
-            <li><a href="ambition.html">🚀 Ambition</a></li>
-        </ul>
-    </nav>
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff 60%); /* Dégradé doux du gris clair au blanc */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    <!-- Image de bannière -->
-    <header class="main-header">
-        <img src="images/Composition-BANNIERE-SITE-JPEG-2.jpg" alt="Bannière Islande" class="banner-image">
-    </header>
+/* Barre de navigation */
+.navbar {
+    background-color: transparent; /* Barre transparente */
+    padding: 15px;
+    position: fixed; /* La barre reste en place */
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Placer la barre au-dessus du contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Une légère ombre pour la rendre visible */
+}
 
-    <!-- Contenu principal -->
-    <div class="content">
-        <section>
-            <h2>Bienvenue sur mon portfolio ! 👋</h2>
-            <p>
-                Je m'appelle Lucas Meynaerts, j'ai 20 ans et je suis passionné par le football ⚽ et les voyages 🌍. 
-                Ayant pratiqué le football à haut niveau, je suis aussi fasciné par les cultures et les paysages du monde entier.
-            </p>
-            <p>
-                Ce portfolio est une manière originale de me présenter. Il reprend à la fois mon parcours académique et professionnel 📚, 
-                mais aussi des aspects plus personnels qui me tiennent à cœur. 
-            </p>
-            <p>
-                Mon objectif ? Vous permettre de mieux comprendre qui je suis, ce que j'ai accompli jusqu'à présent, 
-                et ce que je vise à accomplir professionnellement 🚀. Ce portfolio peut être vu comme un "gros CV" interactif et personnalisé 🌟.
-            </p>
-        </section>
-    </div>
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    <!-- Pied de page -->
-    <footer>
-        <p>© 2024 Lucas Meynaerts - Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+.navbar ul li {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: #666;
+    color: #ffcc00;
+}
+
+/* Image de fond pour les pages spécifiques (Voyages, Séminaires et Accueil) */
+#voyages {
+    background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
+}
+
+#seminaires {
+    background: url('3e.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
+}
+
+#accueil {
+    background: url('images/Accueil.jpg') no-repeat center center fixed; /* Assure-toi que le chemin est correct */
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
+}
+
+/* En-tête principal, avec le titre */
+.main-header {
+    background-color: transparent; /* En-tête transparent pour laisser place à l'image */
+    color: #fff;
+    padding: 0; /* Retirer les marges */
+    margin-top: 0; /* Aucune marge au-dessus du texte */
+}
+
+/* Contenu principal */
+.content {
+    flex: 1;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fond blanc légèrement transparent autour du texte */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    color: #333;
+    text-align: left;
+    max-height: 100%;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    color: #4b4b4b;
+    margin-top: 30px;
+}
+
+.content p {
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Ajustement du footer pour les images */
+footer p {
+    margin: 0;
+}
