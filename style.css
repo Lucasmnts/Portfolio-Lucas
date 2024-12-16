@@ -1,4 +1,14 @@
-/* Style pour la barre des tâches */
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barre de navigation */
 .navbar {
     background-color: #333;
     padding: 15px;
@@ -33,36 +43,28 @@
     color: #ffcc00;
 }
 
-/* Style pour l'image de la bannière */
-.banner-image {
+/* Image de bannière */
+header .banner-image {
     width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 10px;
+    height: 300px; /* Hauteur réduite */
+    object-fit: cover; /* Assure que l'image reste proportionnelle */
+    display: block;
+    margin: 0 auto;
 }
 
-/* Style global */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.main-header {
-    background-color: #005f99;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.main-header h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
+/* Contenu principal */
 .content {
+    max-width: 800px;
+    margin: 30px auto;
     padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.content h2 {
+    color: #007bff;
 }
 
 footer {
@@ -70,8 +72,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
 
