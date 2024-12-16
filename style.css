@@ -7,6 +7,9 @@ body {
     color: white;
     line-height: 1.6;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le corps occupe toute la hauteur de l'écran */
 }
 
 /* Barre de navigation */
@@ -46,6 +49,7 @@ body {
 
 /* Contenu principal */
 .content {
+    flex: 1; /* Fait que la section principale occupe tout l'espace disponible */
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
@@ -72,10 +76,11 @@ body {
     color: #333;
 }
 
-/* Pied de page */
+/* Footer toujours en bas */
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: auto; /* Pousse le footer vers le bas s'il y a de l'espace */
 }
