@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to bottom, #000, #444 20%, #f4f4f4 50%, #444 80%, #000);
+    color: white;
     line-height: 1.6;
     text-align: center;
 }
@@ -44,70 +44,38 @@ body {
     color: #ffcc00;
 }
 
-/* Image de bannière */
-.main-header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-.main-header h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.banner-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
 /* Contenu principal */
 .content {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.decorative-background::before,
-.decorative-background::after {
-    content: '';
-    position: absolute;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    border-radius: 50%;
-    opacity: 0.6;
-}
-
-.decorative-background::before {
-    width: 400px;
-    height: 400px;
-    top: -200px;
-    left: -200px;
-}
-
-.decorative-background::after {
-    width: 300px;
-    height: 300px;
-    bottom: -150px;
-    right: -150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #333;
+    text-align: left;
 }
 
 .content h2 {
-    color: #007bff;
+    color: #ffcc00;
+    text-align: center;
     margin-bottom: 20px;
 }
 
+.content h3 {
+    color: #444;
+    margin-top: 30px;
+}
+
+.content p {
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Pied de page */
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
     margin-top: 20px;
 }
-
-
