@@ -86,7 +86,7 @@ body {
 }
 
 #parcours {
-    background: url('voayge2.jpg') no-repeat center center fixed;
+    background: url('voyage2.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
     padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
