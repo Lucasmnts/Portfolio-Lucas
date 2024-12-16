@@ -52,7 +52,7 @@ body {
     color: #ffcc00;
 }
 
-/* Image de fond pour les pages spécifiques (Voyages et Séminaires) */
+/* Image de fond pour les pages spécifiques (Voyages, Séminaires et Accueil) */
 #voyages {
     background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -63,6 +63,14 @@ body {
 
 #seminaires {
     background: url('3e.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
+    padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
+    margin-top: 80px; /* Décale la page vers le bas pour faire de la place pour la barre de navigation */
+}
+
+#accueil {
+    background: url('Accueil.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent pour adoucir l'effet */
     padding-top: 60px; /* Ajoute de l'espace en haut pour éviter que le texte touche le bord supérieur */
