@@ -1,30 +1,21 @@
-/* Style général pour le site */
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #e0e0e0, #b0c4b1 20%, #f4f4f4 50%, #b0c4b1 80%, #e0e0e0);
+    color: #333;
     line-height: 1.6;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garantit que le body prend toute la hauteur de la page */
-    color: white;
-}
-
-/* Style spécifique à la page des voyages */
-.voyages-page {
-    background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed; /* Image de fond */
-    background-size: cover; /* L'image couvre toute la page */
-    background-attachment: fixed; /* L'image reste fixe lorsque l'on défile */
+    min-height: 100vh;
 }
 
 /* Barre de navigation */
 .navbar {
-    background-color: #3B82F6; /* Bleu vif */
+    background-color: #4CAF50; /* Vert doux */
     padding: 15px;
-    position: fixed;
-    top: 0;
-    width: 100%; /* S'étend sur toute la largeur */
-    z-index: 1000; /* S'assure que la barre est au-dessus du contenu */
 }
 
 .navbar ul {
@@ -38,9 +29,9 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid #fff;
     border-radius: 5px;
-    background-color: #444;
+    background-color: #66bb6a;
 }
 
 .navbar ul li a {
@@ -52,40 +43,65 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
-    color: #ffcc00;
+    background-color: #81c784;
+    color: #fff;
 }
 
 /* Contenu principal */
 .content {
+    flex: 1;
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #333;
     text-align: left;
-    margin-top: 100px; /* Espacement pour que le contenu ne soit pas sous la barre */
 }
 
-/* Titres du contenu */
 .content h2 {
-    color: #ffcc00;
+    color: #4CAF50; /* Vert doux */
     text-align: center;
     margin-bottom: 20px;
 }
 
-.content p {
-    margin: 15px 0;
-    color: #333;
+.content h3 {
+    color: #444;
+    margin-top: 30px;
 }
 
-/* Footer */
+.content p {
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Image d'arrière-plan pour la page Voyages */
+.main-header {
+    position: relative;
+    height: 400px;
+    background-image: url('LOI-CAR-sejour-Islande.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-header h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer toujours en bas */
 footer {
-    background-color: #333;
+    background-color: #4CAF50; /* Vert doux */
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin-top: auto; /* Pousse le footer vers le bas */
+    margin-top: auto;
 }
