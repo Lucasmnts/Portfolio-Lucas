@@ -1,25 +1,30 @@
-/* Style général */
+/* Style général pour le site */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1E3A8A, #3B82F6 20%, #93C5FD 50%, #3B82F6 80%, #1E3A8A); /* Dégradé bleu */
-    color: white;
     line-height: 1.6;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assure que le corps occupe toute la hauteur de l'écran */
+    min-height: 100vh; /* Garantit que le body prend toute la hauteur de la page */
+    color: white;
+}
+
+/* Style spécifique à la page des voyages */
+.voyages-page {
+    background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* L'image couvre toute la page */
+    background-attachment: fixed; /* L'image reste fixe lorsque l'on défile */
 }
 
 /* Barre de navigation */
 .navbar {
     background-color: #3B82F6; /* Bleu vif */
     padding: 15px;
-    position: fixed; /* Fixe la barre en haut */
+    position: fixed;
     top: 0;
     width: 100%; /* S'étend sur toute la largeur */
-    z-index: 1000; /* Pour être au-dessus du contenu */
+    z-index: 1000; /* S'assure que la barre est au-dessus du contenu */
 }
 
 .navbar ul {
@@ -33,9 +38,9 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    border: 2px solid #1E3A8A; /* Bleu foncé pour les bordures */
+    border: 2px solid black;
     border-radius: 5px;
-    background-color: #1E3A8A; /* Bleu foncé */
+    background-color: #444;
 }
 
 .navbar ul li a {
@@ -47,26 +52,8 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #93C5FD; /* Bleu clair au survol */
-    color: #1E3A8A; /* Texte bleu foncé au survol */
-}
-
-/* Image de bannière */
-.main-header {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajuste la hauteur de la bannière */
-    overflow: hidden;
-    margin-top: 70px; /* Décale l'image de la barre fixe */
-}
-
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cette propriété permet de faire en sorte que l'image occupe toute la zone */
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #555;
+    color: #ffcc00;
 }
 
 /* Contenu principal */
@@ -74,25 +61,19 @@ body {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Carré blanc légèrement transparent */
+    background: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: #333;
     text-align: left;
-    width: 100%;
-    display: inline-block;
-    margin-top: 100px; /* Assure un espace entre la barre de navigation et le contenu */
+    margin-top: 100px; /* Espacement pour que le contenu ne soit pas sous la barre */
 }
 
+/* Titres du contenu */
 .content h2 {
-    color: #1E3A8A; /* Couleur bleu foncé pour les titres */
+    color: #ffcc00;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.content h3 {
-    color: #444;
-    margin-top: 30px;
 }
 
 .content p {
@@ -100,11 +81,11 @@ body {
     color: #333;
 }
 
-/* Footer toujours en bas */
+/* Footer */
 footer {
-    background-color: #1E3A8A; /* Bleu foncé pour le footer */
+    background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin-top: auto; /* Pousse le footer vers le bas s'il y a de l'espace */
+    margin-top: auto; /* Pousse le footer vers le bas */
 }
