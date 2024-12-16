@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #000, #444 20%, #f4f4f4 50%, #444 80%, #000);
+    background: linear-gradient(to bottom, #1E3A8A, #3B82F6 20%, #93C5FD 50%, #3B82F6 80%, #1E3A8A); /* Dégradé bleu */
     color: white;
     line-height: 1.6;
     text-align: center;
@@ -14,7 +14,7 @@ body {
 
 /* Barre de navigation */
 .navbar {
-    background-color: #333;
+    background-color: #3B82F6; /* Bleu vif */
     padding: 15px;
 }
 
@@ -29,9 +29,9 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid #1E3A8A; /* Bleu foncé pour les bordures */
     border-radius: 5px;
-    background-color: #444;
+    background-color: #1E3A8A; /* Bleu foncé */
 }
 
 .navbar ul li a {
@@ -43,8 +43,8 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
-    color: #ffcc00;
+    background-color: #93C5FD; /* Bleu clair au survol */
+    color: #1E3A8A; /* Texte bleu foncé au survol */
 }
 
 /* Image de bannière */
@@ -70,19 +70,17 @@ body {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Carré blanc légèrement transparent */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: #333;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrer verticalement */
-    min-height: 50vh; /* Minimum hauteur 50% de l'écran */
+    display: inline-block; /* Le bloc prend uniquement la hauteur du contenu */
+    width: 100%; /* S'étend sur toute la largeur du parent */
 }
 
 .content h2 {
-    color: #ffcc00;
+    color: #1E3A8A; /* Couleur bleu foncé pour les titres */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -99,7 +97,7 @@ body {
 
 /* Footer toujours en bas */
 footer {
-    background-color: #333;
+    background-color: #1E3A8A; /* Bleu foncé pour le footer */
     color: white;
     padding: 10px 0;
     text-align: center;
