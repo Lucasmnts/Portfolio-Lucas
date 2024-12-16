@@ -6,24 +6,26 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    text-align: center; /* Centre tout le texte par défaut */
 }
 
 /* Barre de navigation */
 .navbar {
     background-color: #333;
     padding: 15px;
-    text-align: center;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .navbar ul li {
     display: inline-block;
-    margin: 0 15px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #444;
@@ -33,7 +35,6 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    display: inline-block;
     font-size: 18px;
     font-weight: bold;
 }
@@ -44,12 +45,11 @@ body {
 }
 
 /* Image de bannière */
-header .banner-image {
+.main-header .banner-image {
     width: 100%;
-    height: 300px; /* Hauteur réduite */
-    object-fit: cover; /* Assure que l'image reste proportionnelle */
+    height: 300px; /* Ajuste la hauteur */
+    object-fit: cover; /* Garde les proportions de l'image */
     display: block;
-    margin: 0 auto;
 }
 
 /* Contenu principal */
@@ -60,18 +60,24 @@ header .banner-image {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: center; /* Centre le contenu */
 }
 
 .content h2 {
     color: #007bff;
+    margin-bottom: 20px;
 }
 
+.content p {
+    margin: 15px 0;
+}
+
+/* Pied de page */
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
+
 
