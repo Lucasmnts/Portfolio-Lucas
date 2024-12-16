@@ -3,18 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
-    color: #333;
+    background: linear-gradient(to bottom, #e3e3e3, #cfcfcf 40%, #ffffff 100%); /* Fond plus doux */
+    color: #333; /* Texte plus sombre et lisible */
     line-height: 1.6;
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assure que le corps occupe toute la hauteur de l'écran */
+    min-height: 100vh; 
 }
 
 /* Barre de navigation */
 .navbar {
-    background-color: #333;
+    background-color: #4b4b4b; /* Un gris doux pour la barre de navigation */
     padding: 15px;
 }
 
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: #444;
+    background-color: #555;
 }
 
 .navbar ul li a {
@@ -43,42 +43,26 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
+    background-color: #666;
     color: #ffcc00;
 }
 
-/* Page des Séminaires (Colisée) */
-#seminaires .main-header {
-    background-image: url('3e.jpg'); /* Colisée pour la page des séminaires */
+/* Image de fond pour les pages spécifiques (Voyages et Séminaires) */
+#voyages {
+    background: url('LOI-CAR-sejour-Islande.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
 }
 
-#seminaires .main-header h1 {
-    color: white;
-    font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre pour le texte */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Page des Voyages (Islande) */
-#voyages .main-header {
-    background-image: url('LOI-CAR-sejour-Islande.jpg'); /* Image de l'Islande pour la page des voyages */
+#seminaires {
+    background: url('3e.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
 }
 
-#voyages .main-header h1 {
-    color: white;
-    font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre pour le texte */
-    padding: 10px;
-    border-radius: 5px;
+/* En-tête principal */
+.main-header {
+    background-color: rgba(0, 0, 0, 0.5); /* Ombre légère pour rendre le texte lisible */
+    color: #fff;
+    padding: 60px 0;
 }
 
 /* Contenu principal */
@@ -89,32 +73,38 @@ body {
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
     color: #333;
     text-align: left;
+    max-height: 100%;
+    margin-bottom: 30px; /* Espacement avant le footer */
 }
 
 .content h2 {
-    color: #ffcc00;
+    color: #333;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .content h3 {
-    color: #444;
+    color: #4b4b4b;
     margin-top: 30px;
 }
 
 .content p {
     margin: 15px 0;
-    color: #333;
 }
 
-/* Footer toujours en bas */
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #4b4b4b;
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin-top: auto; /* Pousse le footer vers le bas s'il y a de l'espace */
+    margin-top: auto;
+}
+
+/* Ajustement du footer pour les images */
+footer p {
+    margin: 0;
 }
