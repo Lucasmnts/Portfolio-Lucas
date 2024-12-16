@@ -3,18 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e0e0e0, #b0c4b1 20%, #f4f4f4 50%, #b0c4b1 80%, #e0e0e0);
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff);
     color: #333;
     line-height: 1.6;
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Assure que le corps occupe toute la hauteur de l'écran */
 }
 
 /* Barre de navigation */
 .navbar {
-    background-color: #4CAF50; /* Vert doux */
+    background-color: #333;
     padding: 15px;
 }
 
@@ -29,9 +29,9 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    border: 2px solid #fff;
+    border: 2px solid black;
     border-radius: 5px;
-    background-color: #66bb6a;
+    background-color: #444;
 }
 
 .navbar ul li a {
@@ -43,27 +43,40 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #81c784;
-    color: #fff;
+    background-color: #555;
+    color: #ffcc00;
 }
 
-/* Image d'arrière-plan pour la page Séminaires */
-.main-header {
-    position: relative;
-    height: 400px;
-    background-image: url('3e.jpg'); /* Assurez-vous que l'image est dans le bon dossier */
+/* Page des Séminaires (Colisée) */
+#seminaires .main-header {
+    background-image: url('3e.jpg'); /* Colisée pour la page des séminaires */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 400px;
 }
 
-.main-header h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+#seminaires .main-header h1 {
     color: white;
     font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre pour le texte */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Page des Voyages (Islande) */
+#voyages .main-header {
+    background-image: url('LOI-CAR-sejour-Islande.jpg'); /* Image de l'Islande pour la page des voyages */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#voyages .main-header h1 {
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre pour le texte */
     padding: 10px;
     border-radius: 5px;
 }
@@ -74,15 +87,15 @@ body {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color: #333;
     text-align: left;
 }
 
 .content h2 {
-    color: #4CAF50; /* Vert doux */
+    color: #ffcc00;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -94,14 +107,14 @@ body {
 
 .content p {
     margin: 15px 0;
-    color: #555;
+    color: #333;
 }
 
 /* Footer toujours en bas */
 footer {
-    background-color: #4CAF50; /* Vert doux */
+    background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
-    margin-top: auto;
+    margin-top: auto; /* Pousse le footer vers le bas s'il y a de l'espace */
 }
